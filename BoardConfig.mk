@@ -26,7 +26,9 @@ BLUETOOTH_HCI_USE_MCT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/vs985/bluetooth
 
 # Kernel
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/arm/arm-linaro-linux-androideabi/bin
 TARGET_KERNEL_CONFIG := lineageos_vs985_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linaro-linux-androideabi-
 TARGET_REQUIRES_BUMP := true
 
 # NFC
